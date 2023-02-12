@@ -1,0 +1,37 @@
+
+
+
+.uiux {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    align-items:center;
+    padding: 64px;
+
+}
+.uiux > *{
+    width: min(1000px, 100%);
+}
+
+.uiux-quote {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.uiux-quote > * { width: 100%; }
+
+@media only screen and (max-width:1200px) {
+    .uiux {
+        padding: 32px;
+    
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .uiux {
+        padding: 16px;
+    
+    }
+}
