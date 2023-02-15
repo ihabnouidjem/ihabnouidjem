@@ -15,7 +15,7 @@
     height:900px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: var(--black-25);
+    /* background-color: var(--black-25); */
     box-shadow: inset 0 120px 60px -60px var(--black),
     inset 0 -120px 60px -60px var(--black);
 }
@@ -49,11 +49,12 @@
     flex-direction: column;
     gap:32px;
     margin-inline:auto;
+    margin-top: 650px;
 }
 
 .about-me-textContainer .paragraph,
-.about-me-textContainer .h2,
-.about-me-textContainer .h5 {
+.about-me-textContainer .h5
+ {
     text-shadow: 0 0 6px  var(--black-90);
 }
 

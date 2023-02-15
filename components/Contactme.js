@@ -92,7 +92,7 @@ function Contactme({ showContactme }) {
             : showContactme === 1 && "contact-me-form animate-items"
         }
       >
-        <h2 className="h2 white">CONTACT ME</h2>
+        <h2 className="h2 linear-grey">CONTACT ME</h2>
         <div className="contact-input-container">
           <h5 className="h5 white">NAME</h5>
           <input
@@ -125,7 +125,7 @@ function Contactme({ showContactme }) {
           >
             {isProject ? <CgCheckO /> : <CgRadioCheck />}
           </i>
-          <h6 className="h6 light-blue">
+          <h6 className="h6 white-blue">
             {"you'd like to work on a project ?"}
           </h6>
         </div>

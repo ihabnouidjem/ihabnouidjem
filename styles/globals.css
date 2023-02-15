@@ -12,9 +12,11 @@
   --white-10 : rgb(255 255 255 / 10%);
   --red : #ff1d1d;
   --light-red : #ff9e6e;
-  --blue : #00c9c8;
-  --light-blue : #bffcf9;
+  /* --blue : #00c9c8; */
+  --white-blue : #bfeefc;
   /* --green : #48ff00; */
+  --blue : #0070f3;
+  --light-blue : #2dd4bf;
   --green :#00ff00;
   --light-green : #dfffa8;
 }
@@ -64,7 +66,6 @@
 }
 
 .animate-items > *{
-  /* margin-block:32px; */
   opacity: 100%;
   animation: 800ms animateItems;
 }
@@ -101,15 +102,25 @@
   color:var(--white);
 }
 .light-blue {color:var(--light-blue);}
+.white-blue {color:var(--white-blue);}
 .linear-red {
-  background: -webkit-linear-gradient(60deg, var(--light-red), var(--red));
+  background: -webkit-linear-gradient(-60deg, var(--light-red), var(--red));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow:none;
 }
 .linear-blue {
-  background: -webkit-linear-gradient(60deg, var(--light-blue), var(--blue));
+  background: -webkit-linear-gradient(-60deg, var(--light-blue), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow:none;
+}
+
+.linear-grey {
+  background: -webkit-linear-gradient(-60deg, var(--white-90), var(--white) 30%, var(--white-75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:none;
 }
 
 .animated-blue {
@@ -186,46 +197,38 @@ textarea:focus {
 
 /* assets */
 .h1{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 113px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .h2{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .h3{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 56px;
   font-weight: 300;
 }
 .h4{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .h5{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 28px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 40px;
 }
 .h6{
-   font-family: 'Quicksand', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .paragraph{
-  font-family: 'Cairo', sans-serif;
 font-family: 'Quicksand', sans-serif;
-font-family: 'Rubik', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -328,13 +331,15 @@ font-family: 'Rubik', sans-serif;
   display:flex;
   align-items:center;
   justify-content: center;
+  background-color: var(--white-10);
+  border-radius:8px;
+  overflow: hidden;
 }
 
 .project-slider-image img{
   height:100%;
   width:100%;
-  object-fit:cover;
-  border-radius:8px;
+  object-fit:contain;
 }
 
 .slider-dash-container {
@@ -354,7 +359,6 @@ font-family: 'Rubik', sans-serif;
 
 .current-dash {
   width:32px;
-  /* background: -webkit-linear-gradient(-60deg, var(--light-blue), var(--blue)); */
 }
 
 .white-25-dash {
@@ -374,6 +378,8 @@ font-family: 'Rubik', sans-serif;
   opacity: 0%;
   animation: 6s fade;
 }
+
+
 @keyframes fade {
   0%{
     opacity: 100%;
@@ -386,45 +392,41 @@ font-family: 'Rubik', sans-serif;
   }
 }
 
+.show-600 {
+  display:none;
+}
+
 @media only screen and (max-width: 1200px){
   .h1{
 
     font-size: 102px;
-    font-weight: 400;
   }
   .h2{
 
     font-size: 72px;
-    font-weight: 400;
   }
   .h3{
 
     font-size: 50px;
-    font-weight: 300;
   }
   .h4{
     font-size: 36px;
-    font-weight: 400;
   }
   .h5{
     font-size: 25px;
-    font-weight: 400;
-    line-height: 30px;
+    line-height: 40px;
   }
   .h6{
     font-size: 18px;
-    font-weight: 400;
   }
   .paragraph{
     font-size: 18px;
-    font-weight: 400;
   }
   .project-slider-image {
     height: min(500px, calc(50vw - 32px));
     width:min(1000px, calc(100vw - 64px));
   }
   .popup {
-    /* bottom:216px; */
     right:32px;
   }
   body::-webkit-scrollbar {
@@ -436,32 +438,25 @@ font-family: 'Rubik', sans-serif;
 @media only screen and (max-width: 600px){
   .h1{
     font-size: 55px;
-    font-weight: 400;
   }
   .h2{
     font-size: 44px;
-    font-weight: 400;
   }
   .h3{
     font-size: 35px;
-    font-weight: 300;
   }
   .h4{
     font-size: 28px;
-    font-weight: 400;
   }
   .h5{
     font-size: 22px;
-    font-weight: 400;
-    line-height: 27px;
+    line-height: 30px;
   }
   .h6{
     font-size: 18px;
-    font-weight: 400;
   }
   .paragraph{
     font-size: 18px;
-    font-weight: 400;
   }
   .icon{
     display:flex;
@@ -472,12 +467,21 @@ font-family: 'Rubik', sans-serif;
     font-size:26px;
   }
   .project-slider-image {
-    height: min(500px, calc(50vw - 16px));
+    height: min(1000px, calc(100vw - 32px));
     width:min(1000px, calc(100vw - 32px));
   }
   .popup {
     /* bottom:216px; */
     right:16px;
+  }
+  .hide-600 {
+    display:none;
+  }
+  .slider-dash-container {
+    display: none;
+  }
+  .scroll-buttons {
+    display: none;
   }
 }
 

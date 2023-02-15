@@ -76,18 +76,18 @@ function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    const animationInterval = setInterval(() => {
-      const colors = ["blue", "red", "green"];
-      const filteredColors = colors.filter((color) => {
-        return color !== animatedBckgrndClr;
-      });
-      setAnimatedBckgrndClr(
-        filteredColors[Math.floor(Math.random() * filteredColors.length)]
-      );
-    }, 120000);
-    return () => clearInterval(animationInterval);
-  }, [animatedBckgrndClr]);
+  // useEffect(() => {
+  //   const animationInterval = setInterval(() => {
+  //     const colors = ["blue", "red", "green"];
+  //     const filteredColors = colors.filter((color) => {
+  //       return color !== animatedBckgrndClr;
+  //     });
+  //     setAnimatedBckgrndClr(
+  //       filteredColors[Math.floor(Math.random() * filteredColors.length)]
+  //     );
+  //   }, 120000);
+  //   return () => clearInterval(animationInterval);
+  // }, [animatedBckgrndClr]);
 
   useEffect(() => {
     if (itemsStatus === "solid") {

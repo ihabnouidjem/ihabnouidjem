@@ -40,16 +40,6 @@ export default function App({ Component, pageProps }) {
       return () => clearInterval(interval);
     }
   }, [navbarStatus, navbarBtnStatus]);
-  // useEffect(() => {
-  //   const Scroll = () => {
-  //     if (window.scrollY) {
-  //       setScrollPos(window.scrollY);
-  //     }
-  //   };
-  //   Scroll();
-  //   window.addEventListener("scroll", Scroll);
-  //   return () => window.removeEventListener("scroll", Scroll);
-  // }, []);
   return (
     <>
       <Header

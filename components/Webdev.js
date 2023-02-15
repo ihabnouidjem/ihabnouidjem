@@ -105,14 +105,14 @@ function Webdev({ showWebdev, animatedBckgrndClr }) {
       }
       id="webDev"
     >
-      {windowWidth > 800 ? (
-        <h2 className="h2 white">WEB DEVELOPEMENT</h2>
+      {windowWidth > 1000 ? (
+        <h2 className="h2 linear-grey">WEB DEVELOPEMENT</h2>
       ) : (
-        <h2 className="h2 white">WEB DEV</h2>
+        <h2 className="h2 linear-grey">WEB DEV</h2>
       )}
       <div className="uiux-quote">
-        <h3 className="h3 white">{"do what you love"}</h3>
-        <h3 className="h3 white">{"love what you do"}</h3>
+        <h3 className="h3 white-50">{"do what you love"}</h3>
+        <h3 className="h3 white-50">{"love what you do"}</h3>
       </div>
       <div className="project-slider">
         <div className="project-header">
@@ -146,6 +146,10 @@ function Webdev({ showWebdev, animatedBckgrndClr }) {
               className="project-slider-image"
             >
               <Image
+                srcset="/images/phone-dev-project-1.png 600w,
+              /images/dev-project-1.png 1880w"
+                sizes="(max-width: 600px) 600px,
+              1880px"
                 src="/images/dev-project-1.png"
                 alt="project"
                 height={940}
@@ -160,6 +164,10 @@ function Webdev({ showWebdev, animatedBckgrndClr }) {
               className="project-slider-image"
             >
               <Image
+                srcset="/images/phone-dev-project-not-added-yet.png 600w,
+              /images/dev-project-not-added-yet.png 1880w"
+                sizes="(max-width: 600px) 600px,
+              1880px"
                 src="/images/dev-project-not-added-yet.png"
                 alt="project"
                 height={940}
@@ -174,6 +182,10 @@ function Webdev({ showWebdev, animatedBckgrndClr }) {
               className="project-slider-image"
             >
               <Image
+                srcset="/images/phone-dev-project-not-added-yet.png 600w,
+              /images/dev-project-not-added-yet.png 1880w"
+                sizes="(max-width: 600px) 600px,
+              1880px"
                 src="/images/dev-project-not-added-yet.png"
                 alt="project"
                 height={940}

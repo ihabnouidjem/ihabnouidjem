@@ -18,12 +18,11 @@ function Banner({ showBanner, animatedBckgrndClr }) {
         <h5 className="h5 white">{"HI I'M"} </h5>
         <h1
           className={
-            animatedBckgrndClr === "blue"
-              ? "h1 ihab-nouidjem animated-blue"
-              : animatedBckgrndClr === "red"
-              ? "h1 ihab-nouidjem animated-red"
-              : animatedBckgrndClr === "green" &&
-                "h1 ihab-nouidjem animated-green"
+            animatedBckgrndClr === "blue" && "h1 ihab-nouidjem linear-blue"
+            // : animatedBckgrndClr === "red"
+            // ? "h1 ihab-nouidjem animated-red"
+            // : animatedBckgrndClr === "green" &&
+            //   "h1 ihab-nouidjem animated-green"
           }
         >
           IHAB NOUIDJEM

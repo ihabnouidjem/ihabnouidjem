@@ -9,20 +9,10 @@ export default function Document() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin
+          crossOrigin
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik:ital,wght@0,400;0,500;1,500&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cairo&family=Quicksand:wght@500&family=Rubik:ital,wght@0,400;0,500;1,500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Rubik:wght@300;400;500&display=swap"
           rel="stylesheet"
         ></link>
         <link rel="shortcut icon" href="/favicon.ico" />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Aboutme({ showAboutme }) {
   return (
-    <div className="about-me" id="aboutMe">
+    <div className="about-me">
       <div className="about-me-imageContainer">
         <Image
           src="/images/pexels-malcolm-garret-12926051.jpg"
@@ -21,8 +21,9 @@ function Aboutme({ showAboutme }) {
             ? "about-me-textContainer"
             : showAboutme === 1 && "about-me-textContainer animate-items"
         }
+        id="aboutMe"
       >
-        <h2 className="h2 white">ABOUT ME</h2>
+        <h2 className="h2 linear-grey">ABOUT ME</h2>
         <h5 className="h5 white">
           IT ALL <span className="linear-red">START</span>ED IN JANUARY 2019,
           WHEN I THOUGHT WEB DEVELOPMENT WAS A PART-TIME JOB AT THE KNIGHT{"'"}s

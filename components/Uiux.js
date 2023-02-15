@@ -104,19 +104,11 @@ function Uiux({ showUiux, animatedBckgrndClr }) {
       }
       id="uiux"
     >
-      {/* <div className="test-container">
-        <p className="paragraph white">{`${scrollPos}`}</p>
-        <p className="paragraph white">{`${firstItemPos}`}</p>
-        <p className="paragraph white">{`${secondItemPos}`}</p>
-        <p className="paragraph white">{`${thirdItemPos}`}</p>
-        <p className="paragraph white">{`${nextItem}`}</p>
-        <p className="paragraph white">{`${prevItem}`}</p>
-      </div> */}
-      <h2 className="h2 white">UI&UX DESIGN</h2>
+      <h2 className="h2 linear-grey">UI&UX DESIGN</h2>
       <div className="uiux-quote">
-        <h3 className="h3 white">manners matter</h3>
-        <h3 className="h3 white">good looks are a bonus</h3>
-        <h3 className="h3 white">humor is a must</h3>
+        <h3 className="h3 white-50">manners matter</h3>
+        <h3 className="h3 white-50">good looks are a bonus</h3>
+        <h3 className="h3 white-50">humor is a must</h3>
       </div>
       <div className="project-slider">
         <div className="project-header">
@@ -149,6 +141,10 @@ function Uiux({ showUiux, animatedBckgrndClr }) {
             className="project-slider-image"
           >
             <Image
+              srcset="/images/phone-design-project-1.png 600w,
+              /images/design-project-1.png 1880w"
+              sizes="(max-width: 600px) 600px,
+              1880px"
               src="/images/design-project-1.png"
               alt="project"
               height={940}
@@ -161,6 +157,10 @@ function Uiux({ showUiux, animatedBckgrndClr }) {
             className="project-slider-image"
           >
             <Image
+              srcset="/images/phone-design-project-2.png 600w,
+              /images/design-project-2.png 1880w"
+              sizes="(max-width: 600px) 600px,
+              1880px"
               src="/images/design-project-2.png"
               alt="project"
               height={940}
@@ -173,6 +173,10 @@ function Uiux({ showUiux, animatedBckgrndClr }) {
             className="project-slider-image"
           >
             <Image
+              srcset="/images/phone-design-project-not-added-yet.png 600w,
+              /images/design-project-not-added-yet.png 1880w"
+              sizes="(max-width: 600px) 600px,
+              1880px"
               src="/images/design-project-not-added-yet.png"
               alt="project"
               height={940}

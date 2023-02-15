@@ -17,7 +17,6 @@
 .uiux-quote {
     display:flex;
     flex-direction:column;
-    gap:8px;
 }
 
 .uiux-quote > * { width: 100%; }
